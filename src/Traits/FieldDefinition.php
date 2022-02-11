@@ -107,14 +107,14 @@ trait FieldDefinition
         return !empty($this->definition) && !empty($this->flatFieldDefinition);
     }
 
-    /**
-     * Defines the current model with fields for API
-     *
-     * @param DefinitionBuilder $definition
-     *
-     * @return DefinitionBuilder
-     */
-    protected function define(DefinitionBuilder $definition): DefinitionBuilder
+  /**
+   * Defines the current model with fields for API
+   *
+   * @param  DefinitionBuilder  $definition
+   *
+   * @return DefinitionBuilder|null
+   */
+    protected function define(DefinitionBuilder $definition): null|DefinitionBuilder
     {
         return $definition;
     }
