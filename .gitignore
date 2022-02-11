@@ -372,5 +372,6 @@ trustdb.gpg
 /*.sqlite
 /docker-compose.yml
 /.idea
+/composer.lock
 
 !.gitkeep
