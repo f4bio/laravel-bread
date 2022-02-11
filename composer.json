@@ -1,47 +1,53 @@
 {
-    "name": "bjerke/laravel-bread",
-    "description": "A boilerplate package for BREAD operations through REST API in Laravel",
-    "keywords": [
-        "jesperbjerke",
-        "bread",
-        "crud",
-        "api",
-        "eloquent",
-        "query",
-        "orm",
-        "rest",
-        "laravel"
-    ],
-    "license": "MIT",
-    "type": "library",
-    "authors": [
-        {
-            "name": "Jesper Bjerke",
-            "email": "jesper.bjerke@gmail.com"
-        }
-    ],
-    "require": {
-        "php": "^8.0",
-        "ext-json" : "*",
-        "bjerke/api-query-builder": "^1.0",
-        "illuminate/support": "^8.0",
-        "illuminate/http": "^8.0",
-        "illuminate/database": "^8.0",
-        "illuminate/routing": "^8.0",
-        "illuminate/validation": "^8.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Bjerke\\Bread\\": "src"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Bjerke\\Bread\\BreadServiceProvider"
-            ]
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+  "name": "bjerke/laravel-bread",
+  "description": "A boilerplate package for BREAD operations through REST API in Laravel",
+  "keywords": [
+    "jesperbjerke",
+    "bread",
+    "crud",
+    "api",
+    "eloquent",
+    "query",
+    "orm",
+    "rest",
+    "laravel"
+  ],
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Jesper Bjerke",
+      "email": "jesper.bjerke@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "ext-json": "*",
+    "bjerke/api-query-builder": "@dev",
+    "illuminate/support": "^9.0.2",
+    "illuminate/http": "^9.0.2",
+    "illuminate/database": "^9.0.2",
+    "illuminate/routing": "^9.0.2",
+    "illuminate/validation": "^9.0.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bjerke\\Bread\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Bjerke\\Bread\\BreadServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../laravel-api-query-builder"
+    }
+  ]
 }
