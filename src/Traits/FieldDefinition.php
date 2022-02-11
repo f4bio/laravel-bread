@@ -110,13 +110,12 @@ trait FieldDefinition
   /**
    * Defines the current model with fields for API
    *
-   * @param  DefinitionBuilder  $definition
-   *
-   * @return DefinitionBuilder|null
+   * @return void
    */
-    protected function define(DefinitionBuilder $definition): null|DefinitionBuilder
+//    protected function define(DefinitionBuilder $definition): DefinitionBuilder
+    protected function define(): void
     {
-        return $definition;
+//        return $definition;
     }
 
     /**
